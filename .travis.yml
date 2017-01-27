@@ -78,7 +78,7 @@ before_install:
   - sudo mv xbee-arduino /usr/local/share/arduino/libraries/
 install:
 script:
-  - arduino --verify --board arduino:avr:ethernet $PWD/src/arduino-energy-coordinator-wifi.ino
+  - arduino --verify --board arduino:avr:uno $PWD/src/arduino-energy-coordinator-wifi.ino
 notifications:
   email:
     on_success: change
