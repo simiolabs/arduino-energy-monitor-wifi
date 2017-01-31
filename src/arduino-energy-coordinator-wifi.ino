@@ -52,6 +52,7 @@ char powerFactor[8] = { 0 };
 
 void setup() {
   Serial.begin(9600);
+  xbee.begin(Serial); // initialize Xbee module
   initWiFi(); // get IP address from router
   uploadData();
 }
